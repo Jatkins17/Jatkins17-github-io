@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    
+    /* navigation menu */
+    nav {
+      background-color: dodgerblue;
+      margin: 0 auto;
+      display: flex;
+      padding: 10px;
+      color: lightsteelblue;
+    }
+    nav header {
+      display: flex;
+      align-items: center;
+      color: red;
+      flex: 1;
+    }
+    nav ul {
+      list-style-image: none;
+    }
+    nav li {
+      display: inline-block;
+      padding: 0 10px;
+    }
+    nav a {
+      text-decoration: #771;
+      color: #fff;
+    }
+    
+    /* main container area beneath menu */
+    main {
+      background-color: gray;
+      display: flex;
+    }
+    .sidebar {
+      margin-right: 25px;
+      padding: 10px;
+    }
+    .sidebar img {
+      width: 200px;
+    }
+    .content {
+      flex: 1;
+      padding: 15px;
+    }
+    .knowledge header {
+      font-size: 1.25em;
+    }
+    
+     #all-contents{
+      max-width: 800px;
+      margin: auto;
+    }
+    header {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+    p {
+      font-size: 20px;
+    }
+    .second-favorite-color {
+      color: lightpink;
+      font-size: 20px;
+      font-family: comic;
+    }
+    body {
+      background-color: deepskyblue;
+      padding: 10px;
+      font-family: comic;
+    }
+      #earth {
+        color: Brown;
+      }
+    </style>
+    <title>Spirit Animals</title>
+  </head>
+  <body>
+    <div id="all-contents">
+      <nav>
+        <header>Portfolio</header>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+        </ul>
+        </nav>
+        <main>
+          <div class="sidebar">
+            <img src="data:image/jpeg;base64,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">
+          </div>
+          
+          <div class="content">
+              <h1>Portfolio</h1>
+              <p>2020 Projects</p>
+            <ul>
+              <li class="second-favorite-color">Drew over 10 projects for art major</li>
+              <li class="second-favorite-color">Started coding class for college</li>
+              <li class="second-favorite-color">Started Pre-college classes for Scholarship money</li>
+            </ul>
+            </section>
+          </div>
+        </main>
+  </body>
+</html>
