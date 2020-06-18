@@ -66,7 +66,19 @@
 			it should move the Box to a new location. If the box drifts off the screen
 			turn it around! 
 			*/
+			var positionX = 0;
+			var points = 0;
+			var speed = 10;
 			function update() {
+				positionX = positionX + 10;
+				moveBoxTo(positionX);
+				speed(positionX);
+				if (positionX >= boardWidth){
+					speed = -speed;
+				}
+				if (positionX < 0) {
+					speed = +speed;
+				}
 				
 
 			};
@@ -77,7 +89,10 @@
 			the left side of the screen.
 			*/
 			function handleBoxClick() {
-				
+				positionX = 0;
+				points = points + 1;
+				changeBoxText(points);
+				speed = 3;
 
 
 			};
